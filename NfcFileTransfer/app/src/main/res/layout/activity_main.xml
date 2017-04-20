@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="edu.temple.nfctransfer.MainActivity">
+
+    <EditText
+        android:id="@+id/display_et"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:enabled="false"/>
+    <RadioGroup
+        android:id="@+id/selection_rg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/key_rb"
+            android:checked="true"
+            android:text="Send Key"/>
+        <RadioButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/msg_rb"
+            android:text="Send Message" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/generate_key_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate key pairs"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/edit_message_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Message"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/clear_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear Display"
+        android:textAllCaps="false"/>
+
+</LinearLayout>
